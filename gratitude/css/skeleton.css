@@ -1,0 +1,852 @@
+/*
+
+* Skeleton V1.1
+
+* Copyright 2011, Dave Gamache
+
+* www.getskeleton.com
+
+* Free to use under the MIT license.
+
+* http://www.opensource.org/licenses/mit-license.php
+
+* 8/17/2011
+
+*/
+
+
+
+
+
+/* Table of Contents
+
+==================================================
+
+    #Base 960 Grid
+
+    #Tablet (Portrait)
+
+    #Mobile (Portrait)
+
+    #Mobile (Landscape)
+
+    #Clearing */
+
+
+
+
+
+
+
+/* #Base 960 Grid
+
+================================================== */
+
+
+
+    
+
+	.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+    .column, .columns                           { float: left; display: inline; margin-left: 20px; margin-right: 20px; margin-bottom:20px; }
+
+	nav select 									{ display: none; }
+
+
+
+    /* Nested Column Classes */
+
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+
+
+    /* Base Grid */
+
+    .container .one.column                      { width: 20px;  }
+
+    .container .two.columns                     { width: 80px; }
+
+    .container .three.columns                   { width: 140px; }
+
+    .container .four.columns                    { width: 200px; }
+
+    .container .five.columns                    { width: 260px; }
+
+    .container .six.columns                     { width: 320px; }
+
+    .container .seven.columns                   { width: 380px; }
+
+    .container .eight.columns                   { width: 440px; }
+
+    .container .nine.columns                    { width: 500px; }
+
+    .container .ten.columns                     { width: 560px; }
+
+    .container .eleven.columns                  { width: 620px; }
+
+    .container .twelve.columns                  { width: 670px; }
+
+    .container .thirteen.columns                { width: 740px; }
+
+    .container .fourteen.columns                { width: 800px; }
+
+    .container .fifteen.columns                 { width: 860px; }
+
+    .container .sixteen.columns                 { width: 920px; }
+
+    .container .full-width                      { width: 960px; }
+
+    .container .portfolio.columns               { width: 215px; }
+
+
+
+    .container .one-third.column                { width: 280px; }
+
+    .container .two-thirds.column               { width: 600px; }
+
+
+
+    /* Offsets */
+
+    .container .offset-by-one                   { padding-left: 60px;  }
+
+    .container .offset-by-two                   { padding-left: 120px; }
+
+    .container .offset-by-three                 { padding-left: 180px; }
+
+    .container .offset-by-four                  { padding-left: 240px; }
+
+    .container .offset-by-five                  { padding-left: 300px; }
+
+    .container .offset-by-six                   { padding-left: 360px; }
+
+    .container .offset-by-seven                 { padding-left: 420px; }
+
+    .container .offset-by-eight                 { padding-left: 480px; }
+
+    .container .offset-by-nine                  { padding-left: 540px; }
+
+    .container .offset-by-ten                   { padding-left: 600px; }
+
+    .container .offset-by-eleven                { padding-left: 660px; }
+
+    .container .offset-by-twelve                { padding-left: 720px; }
+
+    .container .offset-by-thirteen              { padding-left: 780px; }
+
+    .container .offset-by-fourteen              { padding-left: 840px; }
+
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+
+
+/* #Tablet (Portrait)
+
+================================================== */
+
+
+
+    /* Note: Design for a width of 768px */
+
+
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+        .container                                  { width: 768px; }
+
+        .container .column,
+
+        .container .columns                         { margin-left: 20px; margin-right: 20px;  }
+
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 20px; }
+
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 20px; }
+
+        hr                                          { margin: 10px 20px 40px 20px; }
+
+
+
+        .container .one.column                      { width: 18px; }
+
+        .container .two.columns                     { width: 56px; }
+
+        .container .three.columns                   { width: 104px; }
+
+        .container .four.columns                    { width: 152px; }
+
+        .container .five.columns                    { width: 200px; }
+
+        .container .six.columns                     { width: 248px; }
+
+        .container .seven.columns                   { width: 296px; }
+
+        .container .eight.columns                   { width: 344px; }
+
+        .container .nine.columns                    { width: 392px; }
+
+        .container .ten.columns                     { width: 440px; }
+
+        .container .eleven.columns                  { width: 488px; }
+
+        .container .twelve.columns                  { width: 536px; }
+
+        .container .thirteen.columns                { width: 584px; }
+
+        .container .fourteen.columns                { width: 632px; }
+
+        .container .fifteen.columns                 { width: 680px; }
+
+        .container .sixteen.columns                 { width: 738px; }
+
+        .container .full-width                      { width: 768px; }
+
+        .container .portfolio.columns               { width: 168px; }
+
+
+
+        .container .one-third.column                { width: 196px; }
+
+        .container .two-thirds.column               { width: 462px; }
+
+
+
+        /* Offsets */
+
+        .container .offset-by-one                   { padding-left: 38px; }
+
+        .container .offset-by-two                   { padding-left: 86px; }
+
+        .container .offset-by-three                 { padding-left: 134px; }
+
+        .container .offset-by-four                  { padding-left: 182px; }
+
+        .container .offset-by-five                  { padding-left: 230px; }
+
+        .container .offset-by-six                   { padding-left: 278px; }
+
+        .container .offset-by-seven                 { padding-left: 326px; }
+
+        .container .offset-by-eight                 { padding-left: 338px; }
+
+        .container .offset-by-nine                  { padding-left: 422px; }
+
+        .container .offset-by-ten                   { padding-left: 470px; }
+
+        .container .offset-by-eleven                { padding-left: 518px; }
+
+        .container .offset-by-twelve                { padding-left: 566px; }
+
+        .container .offset-by-thirteen              { padding-left: 614px; }
+
+        .container .offset-by-fourteen              { padding-left: 662px; }
+
+        .container .offset-by-fifteen               { padding-left: 710px; }
+
+
+
+        .main-content .zen-portfolio-widget .module-image a img {max-width:220px;}
+
+         /* Buddypress */
+
+
+
+        #wpadminbar {
+
+            display: none;
+
+        }
+
+        #BuddyPress .activity-list .activity-content .activity-inner { width: 70% !important; }
+
+        div.dir-search { display:none;}
+
+        div.content .padder {
+
+            margin-right: 0;
+
+            width: auto;
+
+            float: none;
+
+            border: none;
+
+        }
+
+        div.sidebar {
+
+            width: auto;
+
+            float: none;
+
+            margin: 2em 0 0 0;
+
+            border: none;
+
+        }
+
+        ul#nav {
+
+            padding-bottom: 1em;
+
+        }
+
+        ul#nav li {
+
+            width: 46%;
+
+            margin-bottom: 1em;
+
+            margin-right: 0;
+
+        }
+
+        ul#nav li:nth-child(even) {
+
+            margin-left: 3%;
+
+            margin-right: 0;
+
+        }
+
+        ul#nav li a {
+
+            -moz-border-radius: 0.25em;
+
+            -webkit-border-radius: 0.25em;
+
+            border-radius: 0.25em;
+
+            margin-bottom: 0;
+
+        }
+
+    }
+
+
+
+
+
+/*  #Mobile (Portrait)
+
+================================================== */
+
+
+
+    /* Note: Design for a width of 320px */
+
+
+
+    @media only screen and (max-width: 480px) {
+
+		/* Homepage */
+
+		nav												{ margin-bottom:20px; }
+
+		nav ul						     				{ display: none; }
+
+ 		nav select 										{ display: inline-block; margin-top: 20px; margin-bottom:0px; width:300px;}
+
+        hr                                              { margin: 10px 20px 40px 20px; }
+
+        footer .column, footer .columns                 { margin: 0; }
+
+        header.column, header.columns                   { margin: 0; }		
+
+        .container 										{ width: 300px; }
+
+        .columns, .column 								{ margin-left: 20px; }
+
+        .column.alpha, .columns.alpha                   { margin-left: 0; }
+
+        .column.omega, .columns.omega                   { margin-right: 0; }
+
+	
+
+        .container .one.column,
+
+        .container .two.columns,
+
+        .container .three.columns,
+
+        .container .four.columns,
+
+        .container .five.columns,
+
+        .container .six.columns,
+
+        .container .seven.columns,
+
+        .container .eight.columns,
+
+        .container .nine.columns,
+
+        .container .ten.columns,
+
+        .container .eleven.columns,
+
+        .container .twelve.columns,
+
+        .container .thirteen.columns,
+
+        .container .fourteen.columns,
+
+        .container .fifteen.columns,
+
+        .container .sixteen.columns,
+
+        .container .one-third.column,
+
+        .container .two-thirds.column,
+
+        .container .full-width,
+
+        .container .portfolio.columns  { width: 260px; }
+
+
+
+        /* Offsets */
+
+        .container .offset-by-one,
+
+        .container .offset-by-two,
+
+        .container .offset-by-three,
+
+        .container .offset-by-four,
+
+        .container .offset-by-five,
+
+        .container .offset-by-six,
+
+        .container .offset-by-seven,
+
+        .container .offset-by-eight,
+
+        .container .offset-by-nine,
+
+        .container .offset-by-ten,
+
+        .container .offset-by-eleven,
+
+        .container .offset-by-twelve,
+
+        .container .offset-by-thirteen,
+
+        .container .offset-by-fourteen,
+
+        .container .offset-by-fifteen { padding-left: 0; }
+
+        
+
+        .comment-time { display: none; }
+
+        .list-of-comments ul { margin-left: 0; }
+
+        .list-of-comments ul ul { margin-left: 0; }
+
+        #BuddyPress .activity-list .activity-content .activity-inner { width: 85% !important; }
+
+        #BuddyPress a.bp-secondary-action, #BuddyPress span.highlight,
+
+        .social-container { display: none; }
+
+        #BuddyPress .activity-list .activity-avatar { float: none !important; display: none;}
+
+        #BuddyPress .activity-list .activity-content { margin-left: 0 !important;}
+
+        .main-content .zen-portfolio-widget .module-image a img {max-width: 100%;}  
+
+        #BuddyPress div#item-header div#item-header-content { margin-left: 0px !important; display: block; }  
+
+        #buddypress-logo,                               
+
+        ul li .action .meta,                            
+
+        a.activity-time-since                           { display:none; }
+
+        li .activity-meta                               { margin-top:0 !important; }
+
+        .dir-form h3                                    { display:none; }
+
+        .dir-search                                     { display:none;}
+
+
+
+            ul#nav li {
+
+                float: none;
+
+                width: 100%;
+
+                margin-bottom: 0.6em;
+
+                margin-right: 0;
+
+                margin-left: 0;
+
+            }
+
+            ul#nav li:nth-child(even) {
+
+                margin-left: 0;
+
+                margin-right: 0;
+
+            }
+
+            ul#nav li a {
+
+                -moz-border-radius: 0.25em;
+
+                -webkit-border-radius: 0.25em;
+
+                border-radius: 0.25em;
+
+                margin-bottom: 0;
+
+            }
+
+            form#groups-directory-form h3 a {
+
+                display: block;
+
+                margin-top: 0.6em;
+
+            }
+
+            div.post div.author-box,
+
+            div.comment-avatar-box {
+
+                display: none;
+
+            }
+
+            div.post div.post-content,
+
+            div.comment-content {
+
+                margin-left: 0px;
+
+            }
+
+
+
+            form#whats-new-form h5 {
+
+                margin: 0 0 0 0px;
+
+            }
+
+            form#whats-new-form #whats-new-content {
+
+                margin-left: 0px;
+
+                padding-left: 0px;
+
+            }
+
+            body.activity-permalink .activity-list li .activity-content {
+
+                margin-left: 0;
+
+            }
+
+            body.activity-permalink .activity-list li.mini .activity-meta {
+
+                left: 0;
+
+            }
+
+            body #wp-admin-bar .padder { height: 55px; margin-top: -5px; }
+
+    }
+
+
+
+
+
+/* #Mobile (Landscape)
+
+================================================== */
+
+
+
+    /* Note: Design for a width of 480px */
+
+
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+        nav                             { margin-bottom:20px; }
+
+        nav ul                          { display: none; }
+
+        nav select                      { display: inline-block; margin-bottom:0px; margin-top:20px; width:400px;}
+
+        hr                              { margin: 0px 20px 40px 20px; }
+
+        .container 					    { width: 400px; }
+
+        .columns, .column 			    { margin-left: 20px; }
+
+        footer .column, footer .columns { margin: 0; }
+
+        header.column, header.columns   { margin: 0; }          
+
+
+
+        .container .one.column,
+
+        .container .two.columns,
+
+        .container .three.columns,
+
+        .container .four.columns,
+
+        .container .five.columns,
+
+        .container .six.columns,
+
+        .container .seven.columns,
+
+        .container .eight.columns,
+
+        .container .nine.columns,
+
+        .container .ten.columns,
+
+        .container .eleven.columns,
+
+        .container .twelve.columns,
+
+        .container .thirteen.columns,
+
+        .container .fourteen.columns,
+
+        .container .fifteen.columns,
+
+        .container .sixteen.columns,
+
+        .container .one-third.column,
+
+        .container .two-thirds.column,
+
+        .container .full-width,
+
+        .container .portfolio.columns { width: 360px; }
+
+
+
+        #container {
+
+            border: none;
+
+        }
+
+        .comment-time { display: none; }
+
+        .list-of-comments ul { margin-left: 0; }
+
+        .list-of-comments ul ul { margin-left: 0; }
+
+        #BuddyPress .activity-list .activity-content .activity-inner { width: 90% !important; }
+
+        #BuddyPress a.bp-secondary-action, #BuddyPress span.highlight,
+
+        .social-container { display: none; }
+
+        #BuddyPress div#item-header div#item-header-content { margin-left: 0px !important; display: block;}
+
+        .main-content .zen-portfolio-widget .module-image a img {max-width: 100%;}
+
+        div.dir-search { display:none;}
+
+        div.item-list-tabs ul li {
+
+            float: none;
+
+            margin: 0.3em 0.6em;
+
+            background:none;
+
+        }
+
+        div.item-list-tabs ul li.last {
+
+            float: none;
+
+            margin: 0.3em 0.6em;
+
+        }
+
+        div#subnav.item-list-tabs ul li.last {
+
+            margin-top: 1em;
+
+        }
+
+        div.item-list-tabs ul li.selected,
+
+        div.item-list-tabs ul li.current {
+
+            margin: 0.3em 0.6em;
+
+        }
+
+        div.item-list-tabs ul li.selected a,
+
+        div.item-list-tabs ul li.current a {
+
+            background: #eee;
+
+            font-weight: bold;
+
+        }
+
+        div.item-list-tabs {
+
+            background: none;
+
+        }
+
+        div.item-list-tabs ul li:first-child {
+
+            margin: 0.6em 0.6em 0.5em 0.6em;
+
+        }
+
+        div.item-list-tabs ul li a,
+
+        div.item-list-tabs ul li span {
+
+            padding: 0.3em;
+
+        }
+
+        div#subnav ul {
+
+            padding-top: 0.6em;
+
+        }
+
+        div.pagination {
+
+            padding: 0.6em;
+
+        }
+
+        div.item-list-tabs ul {
+
+            border-top: 1px solid #EAEAEA;
+
+            padding-top: 0;
+
+        }
+
+        div.item-list-tabs ul li {
+
+            margin-top: 0;
+
+        }
+
+        form.standard-form #basic-details-section,
+
+        form.standard-form #blog-details-section,
+
+        form.standard-form #profile-details-section {
+
+            float: none;
+
+            width: 100%;
+
+        }
+
+
+
+        }
+
+
+
+
+
+/* #Clearing
+
+================================================== */
+
+
+
+    /* Self Clearing Goodness */
+
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+
+    /* Use clearfix class on parent to clear nested columns,
+
+    or wrap each row of columns in a <div class="row"> */
+
+    .clearfix:before,
+
+    .clearfix:after,
+
+    .row:before,
+
+    .row:after {
+
+      content: '\0020';
+
+      display: block;
+
+      overflow: hidden;
+
+      visibility: hidden;
+
+      width: 0;
+
+      height: 0; }
+
+    .row:after,
+
+    .clearfix:after {
+
+      clear: both; }
+
+    .row,
+
+    .clearfix {
+
+      zoom: 1; }
+
+
+
+    /* You can also use a <br class="clear" /> to clear columns */
+
+    .clear {
+
+      clear: both;
+
+      display: block;
+
+      overflow: hidden;
+
+      visibility: hidden;
+
+      width: 0;
+
+      height: 0;
+
+    }
+
+
+
+
+
+
+

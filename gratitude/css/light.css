@@ -1,0 +1,567 @@
+
+/*--------------------------------------------------------------------------------------------------
+
+    File: light.css
+    Description: Stylesheet file that contains properties related to the colour scheme of the theme.
+    Basically, it gives a life of colours to a place of black and white.
+
+    Table of Contents
+
+    1. Main Colours
+    2. Post Styling
+    3. Widgets
+    4. Shortcodes
+        4.a. Alerts
+        4.b. Buttons
+        4.c. Toggle
+        4.d. Tabs
+
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    1. Main Colours
+--------------------------------------------------------------------------------------------------*/
+
+body {
+    color: #4c4f51;
+    background: #fff;
+}
+
+#top {
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+#middle {
+    background: url(../images/light/bottom-bg.png) bottom center repeat-x;
+}
+
+#bottom {
+    overflow: hidden;
+    background-color: #343438;
+}
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="file"] {
+    border: 1px solid #e1e1e1;
+    background: #fbfbfb;
+}
+
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="file"]:focus { 
+    background-color: #fff; 
+    border-color: #2da1cb;
+    outline: none;
+}
+
+a,
+nav ul li.sfHover li a,
+.title {
+    color: #777;
+}
+
+a:hover,
+nav ul ul li a:hover { color: #2da1cb; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; }
+
+
+nav ul a:hover,
+nav ul li.sfHover li a:hover {
+    color: #444;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul a {
+    color: #777;
+}
+
+nav a:hover {
+    color: #2da1cb;
+}
+
+nav ul span {
+    color: #cfcfcf;
+}
+
+nav ul li:hover a{
+    color: #2da1cb
+}
+
+nav ul li.current-cat a,
+nav ul li.current_page_item a,
+nav ul li.current-menu-item a { font-weight: bold; color: #333; }
+
+nav ul ul,
+nav ul ul ul,
+nav ul ul ul ul { background: #fff; box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.051);  border:1px solid #ccc;
+	-moz-border-radius: 4px 8px 4px 8px;
+    border-radius: 4px 8px 4px 8px; } 
+
+.uber-nav {float:right;}
+.uber-nav a {text-align:right;margin:5px 7px;}   
+
+#google-ad {float:left;margin-left: 12%;}
+
+.header-right {}
+#login-button {
+	padding:3px;
+	background:#ddd;
+	border:1px solid #888;
+	-moz-border-radius: 4px 8px 4px 8px;
+    border-radius: 4px 8px 4px 8px;
+}  
+
+#login-button:hover { background:#bbb;}
+   
+
+.logo-image { 
+    background: url(../images/light/logo.png) no-repeat;
+    min-width: 159px;
+    min-height: 35px;
+    display: block;
+    overflow: hidden;
+}
+
+.content-background {
+
+    background-color: #faf9f9;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.4) 1%, rgba(255,248,248) 75%, rgba(255,248,248) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(1%,rgba(255,255,255,0.4)), color-stop(75%, rgba(255, 248, 248, 1)),  color-stop(100%,rgba(255,248,248,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 1%,rgba(255,248,248,1) 75%), rgba(255,248,248,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 1%,rgba(255,248,248,1) 75%),rgba(255,248,248,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 1%,rgba(255,248,248,1) 75%),rgba(255,248,248,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 1%,rgba(255,248,248,1) 75%),rgba(255,248,248,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.2);
+
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.social-icon {
+    background: url(../images/light/social-sprite.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.rss { background-position: 0 0 }
+
+.twitter { background-position: -64px 0 }
+
+.facebook { background-position: -32px 0 }
+
+.gplus { background-position: -96px 0; }
+
+.pinterest { background-position: -128px 0; }
+
+.bloglovin { background-position: -160px 0; }
+
+.footer-container { 
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    2. Post Styling
+--------------------------------------------------------------------------------------------------*/
+
+blockquote {
+    border-left: 3px solid #e9e9e9;
+    color: #a9a6a6;
+}
+
+code { background: #f5f5f5; }
+
+.entry-title a {
+    color: #333333;
+}
+
+.entry-meta { color: #999; }
+
+.entry-meta a { color: #666; padding: 2px 3px;}
+
+.entry-meta a:hover { background: #2da1cb; color: #fff; }
+
+.module-image img {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-image: initial;
+    border: 1px solid #dadada;
+    position: relative;
+    padding: 4px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.portfolio-thumb img {
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.module-image img:hover {
+    background: #2da1cb;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    3. Widgets
+--------------------------------------------------------------------------------------------------*/
+
+input { color: #a9a6a6; border: 1px solid #d9d9d9 }
+
+.widget-title { color: #555; }
+
+#flickr-wrapper {
+    display: inline-block;
+    padding-left:8px;
+    overflow: hidden;
+}
+
+.flickr_badge_image {
+    float: left;
+    width: 62px;
+    height: 62px;
+}
+
+.flickr_badge_image img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter:alpha(opacity=70);
+    -webkit-transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+    transition: opacity .7s ease-out;
+}
+
+.flickr_badge_image img:hover {
+    border: 2px solid #2da1cb;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.flickr_badge_image a:hover {
+    border: none;
+}
+
+.tweets li {
+    background: url(../images/light/quote.png) no-repeat top left;
+    padding: 0 0 0 30px;
+    margin: 0 0 20px 0 !important;
+}
+
+footer .tweets li {
+        opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter:alpha(opacity=70);
+    -webkit-transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+    transition: opacity .7s ease-out;    
+}
+
+.tweets li:hover {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.tweets .timesince {
+    display: block;
+    font-style: italic;
+    font-size:11px;
+}
+
+.tweets .timesince:hover {
+    border: none;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    3.a. Footer Widgets
+--------------------------------------------------------------------------------------------------*/
+
+footer .widget-title {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform:uppercase;
+    border-bottom: 3px double #999;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer {
+    color: #f9f9f9;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer a {
+    color: #f0f0f0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a:hover {
+    border-bottom:1px dotted #2da1cb;
+    color: #2da1cb;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    4. Shortcodes
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    4.a. Alerts
+--------------------------------------------------------------------------------------------------*/
+
+.alert.white {
+    background-color: #fff;
+    color: #a9a6a6;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #e1e1e1;
+}
+
+.alert.grey {
+    background-color: #eeeeee;
+    color: #848484;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #cbcbcb;
+
+}
+
+.alert.red {
+    background-color: #ffe7e7;
+    color: #d86d6d;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #ed9393;
+}
+
+.alert.orange {
+    background-color: #fff6e7;
+    color: #ccb059;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #edd093;
+}
+
+.alert.blue {
+    background-color: #e7e8ff;
+    color: #7773c1;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #9393ed;
+}
+
+.alert.green {
+    background-color: #ecffe7;
+    color: #53a755;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border: 1px solid #93ed95;
+
+}
+
+/*--------------------------------------------------------------------------------------------------
+    4.b. Buttons
+--------------------------------------------------------------------------------------------------*/
+
+.button.blue:hover,
+.button.red:hover,
+.button.black:hover,
+.button.green:hover,
+.button.orange:hover {
+    color: #fff !important;
+}
+
+.button.blue {
+    background: #2da1cb; /* Old browsers */
+    background: -moz-linear-gradient(top, #2da1cb 0%, #3db7e4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2da1cb), color-stop(100%,#3db7e4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2da1cb 0%,#3db7e4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2da1cb 0%,#3db7e4 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #2da1cb 0%,#3db7e4 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da1cb', endColorstr='#3db7e4',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #2da1cb 0%,#3db7e4 100%); /* W3C */
+
+    color: #fff !important;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+.button.blue:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button.red {
+    background: #cb2d2d; /* Old browsers */
+    background: -moz-linear-gradient(top, #cb2d2d 0%, #e43d3d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb2d2d), color-stop(100%,#e43d3d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cb2d2d 0%,#e43d3d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cb2d2d 0%,#e43d3d 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #cb2d2d 0%,#e43d3d 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb2d2d', endColorstr='#e43d3d',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #cb2d2d 0%,#e43d3d 100%); /* W3C */
+
+    color: #fff !important;
+    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+.button.red:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button.green {
+    background: #27ad36; /* Old browsers */
+    background: -moz-linear-gradient(top, #27ad36 0%, #37cc42 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#27ad36), color-stop(100%,#37cc42)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #27ad36 0%,#37cc42 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #27ad36 0%,#37cc42 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #27ad36 0%,#37cc42 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27ad36', endColorstr='#37cc42',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #27ad36 0%,#37cc42 100%); /* W3C */
+    
+    color: #fff !important;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+.button.green:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button.orange {
+    background: #d59d32; /* Old browsers */
+    background: -moz-linear-gradient(top, #d59d32 0%, #edb439 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d59d32), color-stop(100%,#edb439)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d59d32 0%,#edb439 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d59d32 0%,#edb439 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #d59d32 0%,#edb439 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d59d32', endColorstr='#edb439',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #d59d32 0%,#edb439 100%); /* W3C */
+    
+    color: #fff !important;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: transparent;    
+}
+
+.button.orange:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button.black {
+    background: #111; /* Old browsers */
+    background: -moz-linear-gradient(top, #111 0%, #444 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111), color-stop(100%,#444)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #111 0%,#444 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #111 0%,#444 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #111 0%,#444 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111', endColorstr='#444',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #111 0%,#444 100%); /* W3C */
+    
+    color: #fff !important;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-color: transparent;    
+}
+
+.button.black:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------------------------------------------
+    4.c. Toggles
+--------------------------------------------------------------------------------------------------*/
+
+.toggle {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(0 , 0, 0, 0.05);
+    outline: none;
+}
+
+.toggle:focus,
+.toggle:active {
+    outline: none;
+}
+
+.toggle h4 {
+    font-family:'Droid Sans', Sans;
+    outline: none;
+}
+
+.toggle-content {
+    background: #fff;
+}
+
+.toggle .ui-icon {
+    background: url(../images/light/sprite-gratitude.png) no-repeat -235px -1px;
+    width: 6px;
+    height: 9px;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+}
+
+.toggle .ui-state-active .ui-icon { 
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/*--------------------------------------------------------------------------------------------------
+    4.d. Tabs
+--------------------------------------------------------------------------------------------------*/
+
+.tabs ul.navigation li a {
+    border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    display: block;
+    overflow: hidden;
+    padding: 5px 10px;
+    background: #f1f2f1;
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.0512)
+}
+
+.tabs ul.navigation li.ui-tabs-selected a {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tabs .tab {
+    background: #fff;
+    padding: 19px 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(0 , 0, 0, 0.05);
+}

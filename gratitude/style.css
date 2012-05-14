@@ -1,0 +1,1102 @@
+/*--------------------------------------------------------------------------------------------------
+
+    Theme Name: Gratitude
+    Description: A Beautiful community driven BuddyPress & Wordpress Theme.
+    Author: ZenThemes
+    Tags: buddypress
+    Version: 1.0
+
+    Designed & Handcrafted by Chris Paul from Zen Factory
+    All files, unless otherwise stated, are released under the GNU General Public License
+    version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+
+    Table of Contents
+
+    1. CSS Reset
+    2. Setup
+    3. Header Styling
+    4. Navigation
+    5. Content Styling
+        5.a.  Main Content
+        5.b.  Sidebar
+    6. Post Styling
+    7. Comments Styling
+    8. Pagination Styling
+    9. Footer Styling
+    10. Custom Page Templates
+        10.a. Homepage
+        10.b. Archives
+        10.c. Full Width
+        10.d. Contact
+    11. Widgets
+    12. Shortcode Styles
+        12.a. Alerts
+        12.b. Buttons
+        12.c. Toggles
+        12.d. Tabs
+    13. Portfolio Sorter
+
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    1.  CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }
+    body {
+        line-height: 1; }
+    ol, ul {
+        list-style: none; }
+    blockquote, q {
+        quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none; }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0; }
+    html {
+        -webkit-text-size-adjust: none;
+    }
+
+/*--------------------------------------------------------------------------------------------------
+    2.  Setup
+--------------------------------------------------------------------------------------------------*/
+
+body,
+input,
+textarea,
+button {
+    margin: 0;
+    font: 12px/19px 'Droid Sans', Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+a:hover { text-decoration: none }
+
+a img { border: none }
+
+a, .transition {
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+}
+
+hr { 
+    clear: both; 
+    margin: 30px 20px 40px 20px; 
+    height: 0; 
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 { margin-bottom: 20px }
+
+.module-image { 
+    display:block; 
+    overflow:hidden; 
+    position:relative; 
+}
+
+.post .module-image a {
+    display:block; 
+    position:relative;
+}
+
+.single .module-image a {
+    max-height: 100%;
+}
+
+.alignleft { float: left }
+
+.alignright { float: right }
+
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+.hidden { display: none }
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+}
+
+.navigation-links, p, .bot-margin { margin-bottom: 20px; }
+
+.top-margin { margin-top: 20px !important; }
+.no-bottom { margin-bottom: 0 !important; }
+.float-right { float: right !important; }
+
+
+/*--------------------------------------------------------------------------------------------------
+    3.  Header Styling      
+--------------------------------------------------------------------------------------------------*/
+
+header.sixteen.columns {
+    margin: 30px 0px 0px 0px !important;
+}
+
+.logo {
+    float: left;
+}
+
+    .logo a {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .logo a:hover { text-decoration: none }
+
+    .logo-image { margin-top: 10px; }
+
+.tagline {
+    float: left;
+    font: 11px/14px "Droid Serif", Serif;
+}
+
+.tagline-separator {
+    float: left;
+    display: block;
+    margin-left:20px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    4.  Navigation
+--------------------------------------------------------------------------------------------------*/
+
+nav {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    font-family: Helvetica , Arial, Sans;
+}
+
+    nav ul li:first-child span,
+    nav ul ul span { display: none }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 19px;
+    }
+
+        nav ul a {
+            display: inline;
+            position: relative;
+            color: #b7acac;
+        }
+
+        nav ul li {
+            float: left;
+            display: inline-block;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            list-style: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        nav ul li:hover {
+            visibility: inherit;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: -9999em;
+            width: 160px; 
+        }
+
+        nav ul ul li { width: 100% }
+
+        nav ul li:hover ul,
+        nav ul li.sfHover ul {
+            left: 0px;
+            top: 29px; 
+            z-index: 25000;
+        }
+
+        nav ul a {
+            height: 20px;
+            line-height: 14px;
+        }
+
+        nav ul li { padding: 5px 0; }
+
+        nav ul li a { padding: 5px 15px; overflow: hidden; }
+
+        nav ul li:hover li ul,
+        nav ul li.sfHover li ul,
+        nav ul li li:hover li ul,
+        nav ul li li.sfHover li ul,
+        nav ul li li li:hover li ul,
+        nav ul li li li.sfHover li ul { top: -9999em }
+
+        nav ul li li:hover ul,
+        nav ul li li.sfHover ul,
+        nav ul li li li:hover ul,
+        nav ul li li li.sfHover ul,
+        nav ul li li li li:hover ul,
+        nav ul li li li li.sfHover ul {
+            left: 155px; 
+            top: -1px;
+        }
+
+        nav ul a:hover,
+        nav ul li.current-cat a,
+        nav ul li.current_page_item a,
+        nav ul li.sfHover a,
+        nav ul li.current-menu-item a { text-decoration: none }
+
+        nav ul ul {
+            padding: 0 0 0 0;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+            -moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+            box-shadow: 0 1px 1px rgba(0,0,0,.16);            
+        }
+
+            nav ul ul li {
+                height: auto;
+                line-height: 36px;
+                float: none;
+                background-color: #fff;
+                margin:0 5px;
+                padding: 0;
+                width:90%;
+                border-bottom: 1px solid #eee;
+            }
+
+            nav ul ul li:last-child { border-bottom: none }
+
+            nav ul ul li a {
+                line-height: 20px;
+                height: auto;
+                font-size: 13px;
+                padding: 0 10px 0 9px;
+                font-weight: 400;
+            }
+
+.nav-old {float: left;}
+.nav-new {float: right;}
+
+
+
+/*--------------------------------------------------------------------------------------------------
+    5.  Content Styling
+--------------------------------------------------------------------------------------------------*/
+
+address{font-style:italic}abbr[title],acronym[title]{cursor:help}strong{font-weight:bold}em,cite{font-style:italic}sup{font-size:11px;vertical-align:top}sub{font-size:11px;vertical-align:bottom}caption{text-align:left}small{font-size:10px}code,pre{font:12px/18px Courier, "Courier New", monospace}pre{white-space:pre;line-height:18px;font-size:11px;clear:both;overflow:auto;padding:0 10px}thead tr th{font-size:1em}button{
+    padding: 2px 10px;cursor: pointer;}
+
+table {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 11px;
+}
+
+table caption {
+    padding: 0 0 5px 0;
+    width: auto;     
+    font-style:italic;
+    text-align: right;
+}
+
+th {
+    font-weight:bold;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+td {
+    font-size: 12px;
+    padding: 6px 6px 6px 12px;
+}
+
+tr th:first-child, tr td:first-child{ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: 'Bree Serif', Serif;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+h5 {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+h6 {
+    font-size: 8px;
+    line-height: 13px;
+}
+
+blockquote {
+    margin: 20px;
+    padding: 0 0 0 40px;
+    font-family: 'Droid Serif', Serif;
+    font-style: normal;
+}
+
+input,
+textarea {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 6px;
+    margin: 5px 0;
+}
+
+.content-background {
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    5.a.  Main Content Styling
+--------------------------------------------------------------------------------------------------*/
+
+.main-content {
+    float:left;
+    margin-left: 20px !important;
+    margin-bottom: 40px !important;
+}
+
+.page-title-heading {
+    font-size: 30px;
+    font-family: 'Bree serif', Serif;
+    line-height: 56px;
+    color: #666;
+    text-shadow: 0 1px 0 white;
+    margin: 20px 20px 40px 20px;
+}
+
+.social-container {
+    margin:0 auto;
+    overflow:hidden;
+    clear:right;
+}
+
+.social {
+    float: right;
+    margin: 0;
+    padding: 10px 10px 5px 10px;
+}
+
+    .social span {
+        display: inline-block;
+        margin: 0px;
+        opacity: .7;
+        -moz-opacity: .7;
+        filter:alpha(opacity=70);
+        transition: .7s ease-in-out;
+        -webkit-transition: .7s ease-in-out;
+    }
+
+    .social span:hover {
+        opacity: 1;
+        -moz-opacity: 1;
+        filter:alpha(opacity=100);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+
+img.alignleft {
+    float: left;
+    margin: 10px 25px 20px 0;
+}
+
+img.alignright {
+    display: block;
+    margin: 10px 0 25px 20px;
+}
+
+img.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    margin-top: 5px;
+}
+
+.scale-with-grid {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto\9; /* ie8 */ 
+}
+
+.wp-post-image {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.main-content .module-image a img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */  
+}
+
+embed,
+object,
+iframe {
+    width: 100%;
+}
+
+.zen_video .video-post iframe,
+.slides iframe {
+    display: block;
+    height: 300px;
+}
+
+.zen_video .video-post p {
+    display: none;
+}
+
+.wp-caption {
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.wp-caption img,
+.wp-caption img a {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption
+.wp-caption-text {
+    margin: 0;
+    padding: 5px;
+}
+
+#submit { cursor: pointer }
+
+/*--------------------------------------------------------------------------------------------------
+    5.b.  Sidebar Styling
+--------------------------------------------------------------------------------------------------*/
+
+.sidebar {
+    margin-right: 20px !important;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    6.  Post Styling
+--------------------------------------------------------------------------------------------------*/
+
+.post {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li.post:last-child div.eleven.columns.alpha {
+    display: none;
+} 
+
+.entry-title {
+    font-family: 'Bree Serif', Serif;
+}
+
+.entry-meta {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 11px;
+    font-family: 'Droid Serif', 'PT Serif', Serif;
+
+}
+
+    .entry-meta a {
+        font-style: normal;
+        font-family: 'Droid Serif', Serif;
+        font-size: 11px;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+    }
+
+.entry-content ul { list-style-type: disc }
+
+.entry-content ol { list-style-type: decimal }
+
+/*--------------------------------------------------------------------------------------------------
+    7.  Comments Styling                                
+--------------------------------------------------------------------------------------------------*/
+
+.list-of-comments {
+    float: left;
+    list-style-type: none;
+}
+
+.list-of-comments .comment-entry { padding-left: 70px; padding-top: 30px; }
+.list-of-comments .comment-entry p { margin-bottom: 0 !important; }
+.list-of-comments ul { margin-left: 80px; }
+.list-of-comments ul ul { margin-left: 80px; margin-top: 10px; }
+.list-of-comments li .comments-form { margin-top: 20px }
+.list-of-comments li .respond { padding-top: 5px }
+.list-of-comments li li { padding-top: 24px; margin-top: 0; }
+.list-of-comments li li .commentary { padding-left: 70px !important }
+
+.comment-content { padding-bottom: 20px; border-bottom: 3px double #F1F0F0; }
+
+
+.comment { padding: 10px; margin: 10px 0; }
+
+.pinglist {
+    margin: 20px 0 40px 40px;
+    list-style-type: decimal;
+}
+
+.children { list-style-type: none }
+
+.respond {
+    background: #eaeaea;
+}
+
+#comments-form {
+    margin-top: 20px;
+    float: left;
+}
+
+#comments-form input {
+    margin-right: 20px;
+    width: 35%;
+}
+
+#comments-form textarea { width: 85% }
+
+.list-of-comments .avatar {
+    position: relative;
+    padding: 2px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.list-of-comments .by-author .avatar {
+    background: #2da1cb
+}
+
+.comment-meta { 
+    margin-bottom: 20px;
+    float: right; 
+}
+
+    .comment-meta a {
+        font-style: italic;
+        font-size: 11px;        
+    }
+
+    .comment-meta a:hover { color: #555555 }
+
+.says { display: none }    
+
+.comment-author-admin { background-color: #f9f9f9; }
+
+.comment-author,
+.comment-meta { padding-left: 70px; }
+
+.comment-meta { margin-top: -20px; }
+
+.comment-author { margin-top: -40px; font-size: 14px; font-weight: bold; }
+.comment-author cite { font-style: normal }
+
+.comment-entry ul,
+.comment-entry ol,
+.comment-entry dl { margin-left: 20px }
+li .cancel-comment-reply { padding-left: 40px }
+li li .cancel-comment-reply { padding-left: 20px }
+li li .comment-author,
+li li .comment-meta { padding-left: 30px }
+ol .comments-form { width: 100% }
+
+.nocomments {
+    text-align: left;
+    padding: 40px;
+}
+
+.moderation {
+    padding-left: 70px;
+    color: #999;
+    font-size: 11px;
+}
+
+.comment-entry ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    8.  Pagination Styling
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    9.  Footer Styling                                                  
+--------------------------------------------------------------------------------------------------*/
+
+.footer-container {
+    margin-bottom:20px;
+}
+
+.copyright { 
+    float: left;
+    text-align:left;
+    font-size:11px;        
+}
+
+/*--------------------------------------------------------------------------------------------------
+    10. Custom Page Templates                                                   
+/*------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    10.a. Homepage
+--------------------------------------------------------------------------------------------------*/
+
+.feature {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.feature h1 {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    10.b. Archives
+--------------------------------------------------------------------------------------------------*/
+
+.list-of-archives .children { margin-bottom: 0 }
+
+/*--------------------------------------------------------------------------------------------------
+    10.c. Full Width
+--------------------------------------------------------------------------------------------------*/
+
+.full-width { clear: both; padding:3px 0 40px 0; }
+
+/*--------------------------------------------------------------------------------------------------
+    10.d. Contact
+--------------------------------------------------------------------------------------------------*/
+
+.contact-form { margin-top:20px; }
+
+
+.contact-form label small span {
+    color: red;
+}
+
+.contact-form li { list-style-type: none; }
+
+.contact-form label { display: block; }
+.contact-form label.error { color: red; }
+
+.contact-form textarea {
+    width: 75%;
+    height: 140px;
+}
+
+.contact-form input[type="text"] {
+    width:35%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    11.  Widgets                                                                   
+--------------------------------------------------------------------------------------------------*/
+
+.widget { 
+    margin-bottom: 20px; 
+}
+
+.widget ol {
+    list-style-type: decimal;
+    margin: 0;
+}
+
+.widget ul { margin: 0; }
+
+.widget ul li {
+    font-size:12px;
+    line-height:19px;
+    margin: 8px 0;
+}
+
+.widget ul li:first-child { margin:0; }
+
+.widget-title {
+    margin-bottom: 20px;
+    font-family: 'Bree Serif', Serif;
+    text-transform: uppercase;
+    border-bottom: 3px double #f1f0f0;
+}
+
+.widget_search form { margin: 0 }
+
+.widget {
+    float: left;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.main-content .zen-portfolio-widget ul li {
+display: inline-block;
+}
+
+.main-content .zen-portfolio-widget .module-image a img {
+    max-width: 285px;
+    margin: 0 20px 0 0;
+}
+
+.sidebar .widget .item-list li {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    12. Shortcode Styles                                                    
+--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------
+    12.a. Alerts                                                    
+--------------------------------------------------------------------------------------------------*/
+
+.alert {
+    padding: 20px 5%;
+    margin: 0 0 20px 0;
+    font-family: 'Droid Sans', Sans;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    clear: both;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    12.b. Buttons                                                    
+--------------------------------------------------------------------------------------------------*/
+
+button,
+a.button,
+.more-link {
+    background: #fff; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2f0f0 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f0f0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2f0f0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2f0f0 0%,#ffffff 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #f2f0f0 0%,#ffffff 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f0f0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #f2f0f0 0%,#ffffff 100%); /* W3C */
+    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    
+    color: #999;
+    border: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.1);
+    cursor: pointer;
+    font: normal 12px/19px 'Droid Sans', sans-serif;
+    outline: none;
+    padding: 7px 2.5%;
+    margin: 10px 10px;
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+
+button.large,
+.button.large {
+    padding:10px 5% !important;
+    font-size:14px !important;
+}
+
+a:hover.button,
+.more-link:hover { color:#666 !important; border: 1px solid #999; }
+
+/*--------------------------------------------------------------------------------------------------
+    12.c. Toggles                                                
+--------------------------------------------------------------------------------------------------*/
+
+.toggle { margin-bottom: 0px; }
+
+.toggle .ui-icon {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.toggle h4 {
+    font-size: 12px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.toggle-content {
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    12.d. Tabs                                                
+--------------------------------------------------------------------------------------------------*/
+
+
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tabs .tab {
+    margin-top: -1px;
+}
+
+.tabs ul.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs ul.navigation li {
+    float: left;
+    margin: 0;
+    margin-right: 3px;
+    z-index: 100;
+}
+
+.ui-tabs .ui-tabs-hide {
+    position: absolute;
+    left: -9999px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+    12.e. Columns                                               
+--------------------------------------------------------------------------------------------------*/
+
+.one-half-short,
+.one-third-short,
+.one-fourth-short,
+.three-fourth-short,
+.two-third-short {
+    position: relative;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.last-column {
+    margin-right: 0;
+}
+
+.one-half-short { width: 46%; }
+.one-third-short { width: 29.25%; }
+.one-fourth-short { width: 21%; }
+.three-fourth-short { width: 70.6%; }
+.two-third-short { width:62.5%; }
+
+
+/*--------------------------------------------------------------------------------------------------
+    13.  Portfolio Sorter
+--------------------------------------------------------------------------------------------------*/
+
+.isotope-item { z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.recent-portfolio {
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+ul#sort { 
+    float: left; 
+    font-size: 13px; 
+    list-style: none; 
+    margin-left: 0; 
+    margin-bottom: 20px;
+    width: 100%; 
+            border-radius: 2px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+
+}
+ul#sort li { 
+    overflow: hidden;
+    float:left;
+}
+
+ul#sort li a {
+    padding:5px 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin: 5px 3px 0px 0;
+    background: #f3f3f4;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), inset 1px 1px 1px white;
+    overflow: hidden;
+    display: block;
+    border: 1px solid transparent;
+}
+
+ul#sort li:first-child {
+    margin-left:20px;
+}
+ul#sort a { color: #7b7d80; text-decoration: none; }
+ul#sort li.current a, ul#sort a:hover { text-decoration: none; color: #2da1cb;}
+ul#sort li.current a { color: #333; font-weight: bold; }
+
+.portfolio-entry {
+    display: block;
+    background: #f4f5f4;
+}
+
+.portfolio-content .portfolio-entry .portfolio-title {
+    font-size: 12px;
+    height: 12px;
+    padding: 5px 0;
+    font-weight: bold;
+    font-family: 'Droid Sans', Arial, sans-serif;
+    color: #222;
+    text-align: center;
+}
+
+.portfolio-title:after {
+    content: "";
+    position: relative;
+    top: -40px;
+    left: 50%;
+    margin-left: -10px;
+    height: 10px;
+    width: 20px;
+    background: url(images/light/portfolio-arrow.png) no-repeat;
+    display: block;
+}
+
+.portfolio-excerpt {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -15px;
+}
+
+.client-column-details {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 15px;
+}
+
+.client-details {
+    font-family: Georgia;
+}
+
+.client-details strong {
+    font-family: Droid Sans, 'Droid Sans', Arial, Sans;
+}
+
+.image-grid li {
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+}
